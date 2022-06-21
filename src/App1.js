@@ -1,8 +1,8 @@
 console.log('Hello TypeScript');
-// function type (b :number , a :number) {
-//     return b / a
-// }
-// console.log(type(4,2));
+function type(b, a) {
+    return b / a;
+}
+console.log(type(4, 2));
 var firstName = "Ahmed";
 var lastName = "Shaikh";
 var age = 21;

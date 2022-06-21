@@ -1,10 +1,10 @@
 console.log('Hello TypeScript');
 
-// function type (b :number , a :number) {
-//     return b / a
-// }
+function type (b :number , a :number) {
+    return b / a
+}
 
-// console.log(type(4,2));
+console.log(type(4,2));
 
 let firstName: string = "Ahmed";
 let lastName: string = "Shaikh";
