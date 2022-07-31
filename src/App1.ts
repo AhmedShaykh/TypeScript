@@ -24,8 +24,6 @@ console.log("Status " + isActiveDeveloper);
 
 console.log("Working " + working);
 
-document.write("Hello From TS");
-
 const isActive: boolean = true;
 console.log(isActive);
 
