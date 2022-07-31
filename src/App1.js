@@ -26,5 +26,5 @@ let a = 1; // Not Attempt
 a = true;
 a = ["React", "Next", "Blockchain"];
 console.log(a); // Aviod "Any" Type Because It Work Like JavaScipt;
-let ts;
-console.log(ts = [4, "AHM X", true]);
+let tsc;
+console.log(tsc = [4, "AHM X", true]);
