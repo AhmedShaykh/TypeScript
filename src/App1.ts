@@ -41,6 +41,6 @@ a = ["React" , "Next" , "Blockchain"];
 
 console.log(a); // Aviod "Any" Type Because It Work Like JavaScipt;
 
-let ts : [number, string, boolean];
+let tsc : [number, string, boolean];
 
-console.log(ts = [4, "AHM X", true]);
+console.log(tsc = [4, "AHM X", true]);
