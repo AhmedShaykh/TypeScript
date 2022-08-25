@@ -76,3 +76,11 @@ enum Axiom {
 };
 
 console.log(Axiom.IOT);
+
+let x: unknown = 30; // Not Use .....!
+let y = x === 123;
+
+if (typeof x === 'number') {
+    let z :number = x + 10; 
+    console.log(z);
+}

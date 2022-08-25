@@ -50,7 +50,9 @@ var Axiom;
 })(Axiom || (Axiom = {}));
 ;
 console.log(Axiom.IOT);
-// function greet(name: string) {
-//     return "Hello" + name
-// };
-// greet("Ahmed");
+let x = 30;
+let y = x === 123;
+if (typeof x === 'number') {
+    let z = x + 10;
+    console.log(z);
+}
