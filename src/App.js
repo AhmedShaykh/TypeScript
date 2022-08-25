@@ -28,3 +28,29 @@ a = ["React", "Next", "Blockchain"];
 console.log(a); // Aviod "Any" Type Because It Work Like JavaScipt;
 let tsc;
 console.log(tsc = [4, "AHM X", true]);
+const std = {
+    name: "Bilal",
+    age: 21,
+    courses: ["Ai", "CNC", "BC"]
+};
+console.log(std.name);
+console.log(std.courses);
+const arr = [
+    true, 1, "Bilal", "Ahmed", "Usman", "Yaseen"
+];
+console.log(arr[3]);
+console.log(arr[0]);
+console.log(arr[5]);
+var Axiom;
+(function (Axiom) {
+    Axiom[Axiom["AIC"] = 0] = "AIC";
+    Axiom[Axiom["CNC"] = 1] = "CNC";
+    Axiom[Axiom["BCC"] = 2] = "BCC";
+    Axiom[Axiom["IOT"] = 3] = "IOT";
+})(Axiom || (Axiom = {}));
+;
+console.log(Axiom.IOT);
+// function greet(name: string) {
+//     return "Hello" + name
+// };
+// greet("Ahmed");

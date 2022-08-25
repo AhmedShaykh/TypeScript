@@ -6,7 +6,7 @@
     - name: Create TypeScript Project
       cmd: npm install typeScript@beta
 
-    - name: Check TypeScript Project
+    - name: Check TypeScript Project Version
       cmd: tsc -v
 
     - name: Compile TypeScript File To JavaScript
