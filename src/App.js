@@ -43,16 +43,27 @@ console.log(arr[0]);
 console.log(arr[5]);
 var Axiom;
 (function (Axiom) {
-    Axiom[Axiom["AIC"] = 0] = "AIC";
+    Axiom[Axiom["WEB3"] = 0] = "WEB3";
     Axiom[Axiom["CNC"] = 1] = "CNC";
     Axiom[Axiom["BCC"] = 2] = "BCC";
-    Axiom[Axiom["IOT"] = 3] = "IOT";
+    Axiom[Axiom["NFT"] = 3] = "NFT";
 })(Axiom || (Axiom = {}));
 ;
-console.log(Axiom.IOT);
-let x = 30;
+console.log(Axiom.NFT);
+let x = 30; // Not Use .....!
 let y = x === 123;
 if (typeof x === 'number') {
     let z = x + 10;
     console.log(z);
+}
+let i = 2;
+while (i < 4) {
+    console.log(`Learning While Loop In TS` + i);
+    i++;
+}
+var val = 0;
+var team = ["Bilal", "Ahsan", "Haris", "Junaid"];
+while (team[val]) {
+    console.log(team[val], `My Team Member`);
+    val++;
 }

@@ -69,13 +69,13 @@ console.log(arr[0]);
 console.log(arr[5]);
 
 enum Axiom {
-    AIC,
+    WEB3,
     CNC,
     BCC,
-    IOT
+    NFT
 };
 
-console.log(Axiom.IOT);
+console.log(Axiom.NFT);
 
 let x: unknown = 30; // Not Use .....!
 let y = x === 123;
@@ -83,4 +83,19 @@ let y = x === 123;
 if (typeof x === 'number') {
     let z :number = x + 10; 
     console.log(z);
+}
+
+let i: number = 2;
+
+while ( i < 4) {
+    console.log(`Learning While Loop In TS` + i);
+    i++
+}
+
+var val: number = 0;
+var team: string[] = ["Bilal", "Ahsan", "Haris", "Junaid"];
+
+while (team[val]) {
+    console.log(team[val], `My Team Member`);
+    val++
 }
