@@ -67,3 +67,20 @@ while (team[val]) {
     console.log(team[val], `My Team Member`);
     val++;
 }
+var int = 0;
+do {
+    console.log(`Iteration No.` + int);
+    int++;
+} while (int <= 5);
+for (var lo = 0; lo <= 10; lo++) {
+    if (lo === 5) {
+        console.log(lo + ` is Middle Value`);
+        continue;
+    }
+    console.log(lo);
+}
+function sayHi() {
+    console.log("Learn TypeScript");
+}
+let TS = sayHi();
+console.log(TS);

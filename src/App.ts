@@ -81,13 +81,13 @@ let x: unknown = 30; // Not Use .....!
 let y = x === 123;
 
 if (typeof x === 'number') {
-    let z :number = x + 10; 
+    let z: number = x + 10;
     console.log(z);
 }
 
 let i: number = 2;
 
-while ( i < 4) {
+while (i < 4) {
     console.log(`Learning While Loop In TS` + i);
     i++
 }
@@ -99,3 +99,25 @@ while (team[val]) {
     console.log(team[val], `My Team Member`);
     val++
 }
+
+var int: number = 0;
+
+do {
+    console.log(`Iteration No.` + int);
+    int++;
+} while (int <= 5);
+
+for (var lo : number = 0; lo <= 10; lo++) {
+    if(lo === 5) {
+        console.log(lo + ` is Middle Value`);
+        continue;
+    }
+    console.log(lo);
+}
+
+function sayHi () {
+    console.log("Learn TypeScript");
+}
+
+let TS = sayHi();
+console.log(TS);
