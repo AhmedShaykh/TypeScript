@@ -79,8 +79,7 @@ for (var lo = 0; lo <= 10; lo++) {
     }
     console.log(lo);
 }
-function sayHi() {
-    console.log("Learn TypeScript");
+function ts(message) {
+    return (console.log(message));
 }
-let TS = sayHi();
-console.log(TS);
+ts("Learn TypeScript");

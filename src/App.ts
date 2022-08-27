@@ -107,17 +107,18 @@ do {
     int++;
 } while (int <= 5);
 
-for (var lo : number = 0; lo <= 10; lo++) {
-    if(lo === 5) {
+for (var lo: number = 0; lo <= 10; lo++) {
+    if (lo === 5) {
         console.log(lo + ` is Middle Value`);
         continue;
     }
     console.log(lo);
 }
 
-function sayHi () {
-    console.log("Learn TypeScript");
+function ts(message: string): void {
+    return (
+        console.log(message)
+    )
 }
 
-let TS = sayHi();
-console.log(TS);
+ts("Learn TypeScript");
