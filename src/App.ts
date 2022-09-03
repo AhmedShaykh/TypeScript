@@ -178,3 +178,100 @@ datas2 = {
 }
 
 console.log(datas2);
+
+type Count = string | number;
+let wei: Count;
+wei = "Eth";
+
+console.log(wei);
+
+class Car {
+    brand;
+    constructor(brand: string) {
+        this.brand = brand;
+    }
+
+    getBrand() {
+        console.log(this.brand)
+    }
+}
+
+let myCar = new Car("Bugatti");
+myCar.getBrand();
+
+class CarX {
+    constructor(public brand: string) {
+    }
+
+    getBrand() {
+        console.log(this.brand)
+    }
+}
+
+let myCarX = new CarX("CIVIC");
+myCarX.getBrand();
+console.log(myCarX.brand);
+
+class CarZ {
+    constructor(private brand: string) {
+    }
+
+    getBrand() {
+        console.log(this.brand)
+    }
+}
+
+let myCarZ = new CarZ("Tesla");
+myCarZ.getBrand();
+// console.log(myCarZ.brand); // NO Allow Direct Access In Private Property
+
+class CarY {
+    constructor(protected brand: string) {
+    }
+
+    getBrand() {
+        console.log(this.brand)
+    }
+}
+
+let myCarY = new CarY("BMW");
+myCarY.getBrand();
+// console.log(myCarY.brand); // NO Allow Access In Protected Property & Not Important In Use!
+
+interface Coin {
+    name: string;
+    market: string;
+}
+
+interface Coin2 {
+    year: number;
+}
+
+class myCoin implements Coin, Coin2 {
+    constructor(public name: string, public market: string, public year: number) {
+    }
+
+    getCoin() {
+        console.log(this.name);
+        console.log(this.market);
+        console.log(this.year);
+    }
+}
+
+let myCoins = new myCoin("Eth", "$1,087", 2015);
+
+myCoins.getCoin();
+
+function gen<T>(a: T, b: T): T[] {
+    return [a, b]
+}
+
+console.log(gen<number>(2, 2));
+console.log(gen<string>("2", "2"));
+console.log(gen<Array<number>>([2], [4]));
+
+function addUser<T>(user: T) {
+    return user;
+}
+
+console.log(addUser<string>("AHM X Music"));

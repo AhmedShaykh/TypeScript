@@ -112,3 +112,68 @@ datas2 = {
     id: 6
 };
 console.log(datas2);
+let wei;
+wei = "Eth";
+console.log(wei);
+class Car {
+    constructor(brand) {
+        this.brand = brand;
+    }
+    getBrand() {
+        console.log(this.brand);
+    }
+}
+let myCar = new Car("Bugatti");
+myCar.getBrand();
+class CarX {
+    constructor(brand) {
+        this.brand = brand;
+    }
+    getBrand() {
+        console.log(this.brand);
+    }
+}
+let myCarX = new CarX("CIVIC");
+myCarX.getBrand();
+console.log(myCarX.brand);
+class CarZ {
+    constructor(brand) {
+        this.brand = brand;
+    }
+    getBrand() {
+        console.log(this.brand);
+    }
+}
+let myCarZ = new CarZ("Tesla");
+myCarZ.getBrand();
+// console.log(myCarZ.brand); // NO Allow Direct Access In Private Property
+class CarY {
+    constructor(brand) {
+        this.brand = brand;
+    }
+    getBrand() {
+        console.log(this.brand);
+    }
+}
+let myCarY = new CarY("BMW");
+myCarY.getBrand();
+class myCoin {
+    constructor(name, market, year) {
+        this.name = name;
+        this.market = market;
+        this.year = year;
+    }
+    getCoin() {
+        console.log(this.name);
+        console.log(this.market);
+        console.log(this.year);
+    }
+}
+let myCoins = new myCoin("Eth", "$1,087", 2015);
+myCoins.getCoin();
+function gen(a, b) {
+    return [a, b];
+}
+console.log(gen(2, 2));
+console.log(gen("2", "2"));
+console.log(gen([2], [4]));
