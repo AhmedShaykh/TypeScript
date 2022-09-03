@@ -83,3 +83,13 @@ function ts(message) {
     return (console.log(message));
 }
 ts("Learn TypeScript");
+const tsx = [];
+tsx.push("Types");
+console.log(tsx);
+function test(a, b) {
+    return a + b;
+}
+console.log(test(2, 5));
+let obj;
+obj = { name: "Ahmed", age: 21, salary: 100000 };
+console.log(obj.salary);

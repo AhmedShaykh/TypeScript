@@ -122,3 +122,19 @@ function ts(message: string): void {
 }
 
 ts("Learn TypeScript");
+
+const tsx: string[] = [];
+tsx.push("Types");
+
+console.log(tsx);
+
+function test(a: number, b: number): number {
+    return a + b;
+}
+
+console.log(test(2, 5));
+
+let obj: { name: string, age: number, salary?: number }
+
+obj = { name: "Ahmed", age: 21, salary: 100000 }
+console.log(obj.salary);
