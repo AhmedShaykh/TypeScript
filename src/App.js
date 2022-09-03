@@ -177,3 +177,7 @@ function gen(a, b) {
 console.log(gen(2, 2));
 console.log(gen("2", "2"));
 console.log(gen([2], [4]));
+function addUser(user) {
+    return user;
+}
+console.log(addUser("AHM X Music"));
