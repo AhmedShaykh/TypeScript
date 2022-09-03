@@ -93,3 +93,22 @@ console.log(test(2, 5));
 let obj;
 obj = { name: "Ahmed", age: 21, salary: 100000 };
 console.log(obj.salary);
+function uint(a, b) {
+    return b ? a + b : a;
+}
+console.log(uint("4"));
+let data;
+data = { name: "Mr .X", address: "0xfnefjwnfwpfkwp[ww2[2e2e2" };
+console.log(data);
+let datas; // Union
+datas = { name: "Vitalik", rollNum: 404, address: "0xfnefjwaa46901nfwpfkwpw2e2e2" };
+console.log(datas);
+let datas2; // Intersection
+datas2 = {
+    name: "Satoshi",
+    rollNum: 0,
+    age: 55,
+    address: "IDK",
+    id: 6
+};
+console.log(datas2);
