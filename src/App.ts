@@ -258,8 +258,7 @@ class myCoin implements Coin, Coin2 {
     }
 }
 
-let myCoins = new myCoin("Eth", "$1,087", 2015);
-
+let myCoins = new myCoin("ETH", "$1,087", 2015);
 myCoins.getCoin();
 
 function gen<T>(a: T, b: T): T[] {
@@ -274,4 +273,20 @@ function addUser<T>(user: T) {
     return user;
 }
 
-console.log(addUser<string>("AHM X Music"));
+console.log(addUser<string>("AHM X ETH"));
+
+interface Artist {
+    firstName: string;
+    lastName: string;
+}
+
+function artistName(artist: Artist) {
+    console.log(`${artist.firstName} ${artist.lastName}`);
+}
+
+let art ={
+    firstName: "Martin",
+    lastName: "Garrix"
+}
+
+artistName(art);

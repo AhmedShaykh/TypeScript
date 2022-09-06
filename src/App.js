@@ -169,7 +169,7 @@ class myCoin {
         console.log(this.year);
     }
 }
-let myCoins = new myCoin("Eth", "$1,087", 2015);
+let myCoins = new myCoin("ETH", "$1,087", 2015);
 myCoins.getCoin();
 function gen(a, b) {
     return [a, b];
@@ -180,4 +180,12 @@ console.log(gen([2], [4]));
 function addUser(user) {
     return user;
 }
-console.log(addUser("AHM X Music"));
+console.log(addUser("AHM X ETH"));
+function artistName(artist) {
+    console.log(`${artist.firstName} ${artist.lastName}`);
+}
+let art = {
+    firstName: "Martin",
+    lastName: "Garrix"
+};
+artistName(art);
