@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.component = void 0;
 console.log('Hello TypeScript');
 function type(b, a) {
     return b / a;
@@ -189,3 +191,9 @@ let art = {
     lastName: "Garrix"
 };
 artistName(art);
+exports.component = {
+    name: "Solidity",
+    version: 8,
+    frameWork: "Hardhat",
+};
+console.log(exports.component);

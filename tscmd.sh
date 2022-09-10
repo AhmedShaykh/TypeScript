@@ -4,7 +4,7 @@
       cmd: npm init
 
     - name: Create TypeScript Project
-      cmd: npm install typeScript@beta
+      cmd: npm install typescript@beta
 
     - name: Check TypeScript Project Version
       cmd: tsc -v

@@ -284,9 +284,19 @@ function artistName(artist: Artist) {
     console.log(`${artist.firstName} ${artist.lastName}`);
 }
 
-let art ={
+let art = {
     firstName: "Martin",
     lastName: "Garrix"
 }
 
 artistName(art);
+
+import { Component } from "./App2";
+
+export const component: Component = {
+    name: "Solidity",
+    version: 8,
+    frameWork: "Hardhat",
+}
+
+console.log(component);
