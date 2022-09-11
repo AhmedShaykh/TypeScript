@@ -313,3 +313,30 @@ if (Math.random() > 0.5) {
 }
 
 console.log(thinker);
+
+let scientist: number | string;
+scientist = Math.random() > 0.5 ? "Newton" : 404
+
+if (scientist === "Newton") {
+    scientist.toUpperCase();
+}
+
+console.log(scientist);
+
+type flower = "Rose" | "Tulip";
+
+let var10: flower | string;
+var10 = "Rose";
+console.log(var10);
+
+const game: { name: string, year: number } = {
+    name: "Minecraft",
+    year: 2008
+}
+
+console.log(game);
+
+const games = { name: "Minecraft" };
+games.name = "GTA 5";
+
+console.log(games);

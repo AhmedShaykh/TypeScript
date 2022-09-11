@@ -206,3 +206,20 @@ if (Math.random() > 0.5) {
     thinker = "Text";
 }
 console.log(thinker);
+let scientist;
+scientist = Math.random() > 0.5 ? "Newton" : 404;
+if (scientist === "Newton") {
+    scientist.toUpperCase();
+}
+console.log(scientist);
+let var10;
+var10 = "Rose";
+console.log(var10);
+const game = {
+    name: "Minecraft",
+    year: 2008
+};
+console.log(game);
+const games = { name: "Minecraft" };
+games.name = "GTA 5";
+console.log(games);
