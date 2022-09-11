@@ -191,9 +191,18 @@ let art = {
     lastName: "Garrix"
 };
 artistName(art);
+const App2_1 = require("./App2");
 exports.component = {
     name: "Solidity",
     version: 8,
     frameWork: "Hardhat",
 };
 console.log(exports.component);
+console.log(App2_1.metaVerse);
+let matheMatician = Math.random() > 0.5 ? undefined : "Message";
+console.log(matheMatician);
+let thinker = null;
+if (Math.random() > 0.5) {
+    thinker = "Text";
+}
+console.log(thinker);

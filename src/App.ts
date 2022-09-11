@@ -292,6 +292,7 @@ let art = {
 artistName(art);
 
 import { Component } from "./App2";
+import { metaVerse } from "./App2";
 
 export const component: Component = {
     name: "Solidity",
@@ -300,3 +301,15 @@ export const component: Component = {
 }
 
 console.log(component);
+
+console.log(metaVerse);
+
+let matheMatician = Math.random() > 0.5 ? undefined : "Message";
+console.log(matheMatician);
+
+let thinker: string | null = null;
+if (Math.random() > 0.5) {
+    thinker = "Text";
+}
+
+console.log(thinker);

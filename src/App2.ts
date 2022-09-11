@@ -3,3 +3,5 @@ export interface Component {
     version?: number;
     frameWork?: string;
 }
+
+export const metaVerse: string = "Panaverse"; 
