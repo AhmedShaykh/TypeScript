@@ -246,13 +246,31 @@ comp2 = {
     year: 2023,
 };
 console.log(comp2);
-const poem = Math.random() > .05 ? {
+const poem = Math.random() > 0.5 ? {
     name: "Baby Shark",
     Pages: "234",
 } : {
-    name: "Mumpty Dumpty",
+    name: "Humpty Dumpty",
     rhymes: true,
 };
 console.log(typeof poem.name);
 console.log(typeof poem.Pages);
 console.log(typeof poem.rhymes);
+function rateSong(song, rating = 0) {
+    console.log(`${song} gets rating ${rating}`);
+}
+rateSong("Like It");
+rateSong("Dreaming", 2);
+function fun1(singer, ...songs) {
+    for (const var1 of songs) {
+        console.log(`${var1}, by singer name ${singer}`);
+    }
+}
+fun1("Justin Bieber", "Stay", "Baby", "America");
+function singSong(songs) {
+    for (let song of songs) {
+        console.log(`${song}`);
+    }
+    return songs.length;
+}
+singSong(["Dreaming", "Formula"]);
