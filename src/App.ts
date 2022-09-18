@@ -385,7 +385,7 @@ const poem = Math.random() > 0.5 ? {
     name: "Baby Shark",
     Pages: "234",
 } : {
-    name: "Humpty Dumpty",
+    name: "Twinkle Twinkle Little Star",
     rhymes: true,
 }
 
@@ -406,9 +406,9 @@ function fun1(singer: string, ...songs: string[]) {
     }
 }
 
-fun1("Justin Bieber","Stay", "Baby", "America");
+fun1("Justin Bieber", "Stay", "Baby", "America");
 
-function singSong (songs: string[]) {
+function singSong(songs: string[]) {
     for (let song of songs) {
         console.log(`${song}`);
     }

@@ -250,7 +250,7 @@ const poem = Math.random() > 0.5 ? {
     name: "Baby Shark",
     Pages: "234",
 } : {
-    name: "Humpty Dumpty",
+    name: "Twinkle Twinkle Little Star",
     rhymes: true,
 };
 console.log(typeof poem.name);
