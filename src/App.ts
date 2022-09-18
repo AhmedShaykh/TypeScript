@@ -340,3 +340,55 @@ const games = { name: "Minecraft" };
 games.name = "GTA 5";
 
 console.log(games);
+
+let employee: {
+    pro1: string,
+    pro2: number,
+}
+
+let usama = employee = {
+    pro1: "Web 3 Developer",
+    pro2: 400000,
+}
+
+let umar = employee = {
+    pro1: "React Developer",
+    pro2: 400000,
+}
+
+console.log(`Usama: ${usama.pro1},Umar: ${umar.pro1}`);
+console.log(`Usama: ${usama.pro2},Umar: ${umar.pro2}`);
+
+type company = {
+    name: string;
+    year: number;
+}
+
+let comp1: company = {
+    name: "TeaX",
+    year: 2021,
+}
+
+let comp2 = comp1;
+
+console.log(comp2);
+console.log(comp2.name);
+
+comp2 = {
+    name: "KozmoTech",
+    year: 2023,
+}
+
+console.log(comp2);
+
+const poem = Math.random() > .05 ? {
+    name: "Baby Shark",
+    Pages: "234",
+} : {
+    name: "Mumpty Dumpty",
+    rhymes: true,
+}
+
+console.log(typeof poem.name);
+console.log(typeof poem.Pages);
+console.log(typeof poem.rhymes);
