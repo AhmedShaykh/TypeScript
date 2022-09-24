@@ -341,23 +341,23 @@ games.name = "GTA 5";
 
 console.log(games);
 
-let employee: {
-    pro1: string,
-    pro2: number,
+let freelancer: {
+    dev: string,
+    salary: number,
 }
 
-let usama = employee = {
-    pro1: "Web 3 Developer",
-    pro2: 400000,
+let usman = freelancer = {
+    dev: "Web 3 Developer",
+    salary: 400000,
 }
 
-let umar = employee = {
-    pro1: "React Developer",
-    pro2: 400000,
+let bilal = freelancer = {
+    dev: "Full Stack Blockchain Developer",
+    salary: 5000000000,
 }
 
-console.log(`Usama: ${usama.pro1},Umar: ${umar.pro1}`);
-console.log(`Usama: ${usama.pro2},Umar: ${umar.pro2}`);
+console.log(`Usman: is ${usman.dev} & Usman Net Worth is $${usman.salary}`);
+console.log(`Bilal: is ${bilal.dev} & Bilal Net Worth is $${bilal.salary}`);
 
 type company = {
     name: string;
@@ -369,50 +369,52 @@ let comp1: company = {
     year: 2021,
 }
 
+console.log(comp1);
+
 let comp2 = comp1;
 
-console.log(comp2);
+console.log("Company 2", comp2);
 console.log(comp2.name);
 
 comp2 = {
-    name: "KozmoTech",
+    name: "PanaVerse",
     year: 2023,
 }
 
 console.log(comp2);
 
-const poem = Math.random() > 0.5 ? {
-    name: "Baby Shark",
-    Pages: "234",
+const series = Math.random() > 0.5 ? {
+    name: "Vikings",
+    storyLine: "Reality",
 } : {
-    name: "Twinkle Twinkle Little Star",
-    rhymes: true,
+    name: "Stranger Things",
+    fantasy: true,
 }
 
-console.log(typeof poem.name);
-console.log(typeof poem.Pages);
-console.log(typeof poem.rhymes);
+console.log(typeof series.name, series.name);
+console.log(typeof series.storyLine, series.storyLine);
+console.log(typeof series.fantasy, series.fantasy);
 
-function rateSong(song: string, rating = 0) {
-    console.log(`${song} gets rating ${rating}`);
+function edm(song: string, rating = 0) {
+    console.log(`${song} Gets Rating ${rating}/10`);
 }
 
-rateSong("Like It");
-rateSong("Dreaming", 2);
+edm("Hardwell - Mad World", 9);
+edm("Will Sparks - Dreaming", 10);
 
-function fun1(singer: string, ...songs: string[]) {
+function song(singer: string, ...songs: string[]) {
     for (const var1 of songs) {
-        console.log(`${var1}, by singer name ${singer}`)
+        console.log(`${var1} Feat. ${singer}`)
     }
 }
 
-fun1("Justin Bieber", "Stay", "Baby", "America");
+song("Sabrina Carpenter", "On My Way", "Fast Times", "First Love");
 
-function singSong(songs: string[]) {
-    for (let song of songs) {
-        console.log(`${song}`);
+function technoTrance(techno: string[]) {
+    for (let trance of techno) {
+        console.log(`${trance}`);
     }
-    return songs.length;
+    return techno.length;
 }
 
-singSong(["Dreaming", "Formula"]);
+technoTrance(["Will Sparks - L.S.D", "MADDIX - Formula"]);
