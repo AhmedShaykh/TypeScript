@@ -275,3 +275,59 @@ function technoTrance(techno) {
     return techno.length;
 }
 technoTrance(["Will Sparks - L.S.D", "MADDIX - Formula"]);
+function fun1(callback) {
+    setTimeout(() => {
+        callback();
+    }, 2000);
+    console.log("Please Wait");
+}
+function fun2() {
+    console.log("Working Done...!");
+}
+fun1(fun2);
+let data1 = ['text2', 'text3', 'text4'];
+data1.forEach((data, index) => {
+    console.log(data, index);
+});
+function funName(data2) {
+    console.log(data2(404));
+}
+funName((abc) => 4843657453);
+function voidData(message) {
+    console.log(message);
+}
+let NewVoid = voidData("Check Void Function");
+console.log(NewVoid);
+function overload(a, b) {
+    return a + b;
+}
+;
+console.log(overload("Hello ", "World"));
+console.log(overload(112, 88));
+let newArray = ["array", "array2", 123, 456, true];
+newArray.pop();
+newArray.push(789, false);
+console.log(newArray);
+let arrayTS;
+console.log(arrayTS = ["Data", "Type", 345, 864]);
+let arrayVar;
+arrayVar = [1, 2, 3, 4], "Pakistan";
+console.log(arrayVar);
+let arrayDim;
+// ========== 2 Dimensional Array ========== //
+arrayDim = [
+    ["Mon", "Tue", "Wed"],
+    [4, 6, 10]
+];
+for (let Days in arrayDim) {
+    console.log(arrayDim[Days]);
+}
+let Coins = ["BTC", "ETH", "BNB"];
+for (let data in Coins) {
+    console.log(Coins[data]);
+}
+// ======== Tuple ======== // 
+let tuple = [4, "TenUp"];
+console.log(tuple);
+let tupleValue = [4, 6];
+console.log(tupleValue);
