@@ -452,7 +452,7 @@ function voidData(message: string): void {
 }
 
 let NewVoid: void = voidData("Check Void Function");
-console.log(NewVoid);
+console.log(NewVoid + " Void Function");
 
 function overload(a: String, b: String): String;
 function overload(a: number, b: number): number;
@@ -469,7 +469,8 @@ newArray.push(789, false);
 console.log(newArray);
 
 let arrayTS: (string | number)[];
-console.log(arrayTS = ["Data", "Type", 345, 864]);
+arrayTS = ["Data", "Type", 345, 864];
+console.log(arrayTS)
 
 let arrayVar: string | number[];
 arrayVar = [1, 2, 3, 4], "Pakistan";
@@ -488,13 +489,17 @@ for (let Days in arrayDim) {
 }
 
 let Coins: string[] = ["BTC", "ETH", "BNB"];
+
 for (let data in Coins) {
     console.log(Coins[data]);
 }
 
-// ======== Tuples ======== // 
+// // ======== Tuples ======== //
 let tuple: [number, string] = [4, "TenUp"];
 console.log(tuple);
 
 let tupleValue: [number, number] = [4, 6];
 console.log(tupleValue);
+
+const tupleConst = ["React Token", true , 505] as const;
+console.log(tupleConst);
