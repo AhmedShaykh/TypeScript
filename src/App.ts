@@ -1,4 +1,4 @@
-console.log('Hello TypeScript');
+console.log('Learn TypeScript!');
 
 function type(b: number, a: number) {
     return b / a
@@ -39,7 +39,7 @@ let a: any = 1; // Not Attempt
 a = true;
 a = ["React", "Next", "Blockchain"];
 
-console.log(a); // Aviod "Any" Type Because It Work Like JavaScipt;
+console.log(a); // Aviod "Any" Type;
 
 let tsc: [number, string, boolean];
 
@@ -97,7 +97,7 @@ var team: string[] = ["Bilal", "Ahsan", "Haris", "Junaid"];
 
 while (team[val]) {
     console.log(team[val], `My Team Member`);
-    val++
+    val++;
 }
 
 var int: number = 0;
@@ -152,7 +152,7 @@ interface dataType {
 }
 
 let data: dataType;
-data = { name: "Mr .X", address: "0xfnefjwnfwpfkwp[ww2[2e2e2" }
+data = { name: "Mr. X", address: "0xfnefjwnfwpfkwp[ww2[2e2e2" }
 
 console.log(data);
 
@@ -180,6 +180,7 @@ datas2 = {
 console.log(datas2);
 
 type Count = string | number;
+
 let wei: Count;
 wei = "Eth";
 
@@ -210,7 +211,7 @@ class CarX {
 
 let myCarX = new CarX("CIVIC");
 myCarX.getBrand();
-console.log(myCarX.brand);
+console.log(`My Car ` + myCarX.brand);
 
 class CarZ {
     constructor(private brand: string) {
@@ -236,7 +237,7 @@ class CarY {
 
 let myCarY = new CarY("BMW");
 myCarY.getBrand();
-// console.log(myCarY.brand); // NO Allow Access In Protected Property & Not Important In Use!
+// console.log(myCarY.brand); // Protected Property Access Allow In SubClasses
 
 interface Coin {
     name: string;
@@ -451,8 +452,7 @@ function voidData(message: string): void {
     console.log(message);
 }
 
-let NewVoid: void = voidData("Check Void Function");
-console.log(NewVoid + " Void Function");
+voidData("Check Void Function");
 
 function overload(a: String, b: String): String;
 function overload(a: number, b: number): number;
@@ -495,11 +495,11 @@ for (let data in Coins) {
 }
 
 // // ======== Tuples ======== //
-let tuple: [number, string] = [4, "TenUp"];
+let tuple: [number, string] = [4, "MATIC"];
 console.log(tuple);
 
 let tupleValue: [number, number] = [4, 6];
 console.log(tupleValue);
 
-const tupleConst = ["React Token", true , 505] as const;
+const tupleConst = ["React Token", true, 505] as const;
 console.log(tupleConst);

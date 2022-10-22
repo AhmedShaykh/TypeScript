@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.component = void 0;
-console.log('Hello TypeScript');
+console.log('Learn TypeScript!');
 function type(b, a) {
     return b / a;
 }
@@ -27,7 +27,7 @@ console.log(isEven(10));
 let a = 1; // Not Attempt
 a = true;
 a = ["React", "Next", "Blockchain"];
-console.log(a); // Aviod "Any" Type Because It Work Like JavaScipt;
+console.log(a); // Aviod "Any" Type;
 let tsc;
 console.log(tsc = [4, "AHM X", true]);
 const std = {
@@ -100,7 +100,7 @@ function uint(a, b) {
 }
 console.log(uint("4"));
 let data;
-data = { name: "Mr .X", address: "0xfnefjwnfwpfkwp[ww2[2e2e2" };
+data = { name: "Mr. X", address: "0xfnefjwnfwpfkwp[ww2[2e2e2" };
 console.log(data);
 let datas; // Union
 datas = { name: "Vitalik", rollNum: 404, address: "0xfnefjwaa46901nfwpfkwpw2e2e2" };
@@ -137,7 +137,7 @@ class CarX {
 }
 let myCarX = new CarX("CIVIC");
 myCarX.getBrand();
-console.log(myCarX.brand);
+console.log(`My Car ` + myCarX.brand);
 class CarZ {
     constructor(brand) {
         this.brand = brand;
@@ -296,8 +296,7 @@ funName((abc) => 4843657453);
 function voidData(message) {
     console.log(message);
 }
-let NewVoid = voidData("Check Void Function");
-console.log(NewVoid + " Void Function");
+voidData("Check Void Function");
 function overload(a, b) {
     return a + b;
 }
@@ -328,7 +327,7 @@ for (let data in Coins) {
     console.log(Coins[data]);
 }
 // // ======== Tuples ======== //
-let tuple = [4, "TenUp"];
+let tuple = [4, "MATIC"];
 console.log(tuple);
 let tupleValue = [4, 6];
 console.log(tupleValue);
