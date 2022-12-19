@@ -5,22 +5,24 @@ console.log('Learn TypeScript!');
 function type(b, a) {
     return b / a;
 }
+;
 console.log(type(4, 2));
 let firstName = "Ahmed";
 let lastName = "Shaikh";
 let age = 21;
 let isActiveDeveloper = true;
-let working = ["JS", "React", "TS"];
+let working = ["JavaScript", "React", "TypeSScript"];
 let fullName = `${firstName} ${lastName}`;
 console.log(fullName);
 console.log("Age " + age);
 console.log("Status " + isActiveDeveloper);
-console.log("Working " + working);
+console.log("Working: " + working);
 const isActive = true;
 console.log(isActive);
 function isEven(num) {
     return num % 2 === 0;
 }
+;
 console.log(isEven(5));
 console.log(isEven(2));
 console.log(isEven(10));
@@ -38,9 +40,9 @@ const std = {
 console.log(std.name);
 console.log(std.courses);
 const arr = [
-    true, 1, "Bilal", "Ahmed", "Usman", "Yaseen"
+    true, 1, "Dayyan", "Ahmed", "Usman", "Yaseen"
 ];
-console.log(arr[3]);
+console.log(arr[2]);
 console.log(arr[0]);
 console.log(arr[5]);
 var Axiom;
@@ -191,14 +193,14 @@ let art = {
     lastName: "Garrix"
 };
 artistName(art);
-const App2_1 = require("./App2");
+const index_1 = require("./index");
 exports.component = {
     name: "Solidity",
     version: 8,
     frameWork: "Hardhat",
 };
 console.log(exports.component);
-console.log(App2_1.metaVerse);
+console.log(index_1.metaVerse);
 let matheMatician = Math.random() > 0.5 ? undefined : "Message";
 console.log(matheMatician);
 let thinker = null;
@@ -223,12 +225,11 @@ console.log(game);
 const games = { name: "Minecraft" };
 games.name = "GTA 5";
 console.log(games);
-let freelancer;
-let usman = freelancer = {
+let usman = {
     dev: "Web 3 Developer",
     salary: 400000,
 };
-let bilal = freelancer = {
+let bilal = {
     dev: "Full Stack Blockchain Developer",
     salary: 5000000000,
 };

@@ -2,7 +2,7 @@ console.log('Learn TypeScript!');
 
 function type(b: number, a: number) {
     return b / a
-}
+};
 
 console.log(type(4, 2));
 
@@ -13,7 +13,7 @@ let age: number = 21;
 
 let isActiveDeveloper: boolean = true;
 
-let working: string[] = ["JS", "React", "TS"];
+let working: string[] = ["JavaScript", "React", "TypeSScript"];
 
 let fullName: string = `${firstName} ${lastName}`;
 console.log(fullName);
@@ -22,14 +22,14 @@ console.log("Age " + age);
 
 console.log("Status " + isActiveDeveloper);
 
-console.log("Working " + working);
+console.log("Working: " + working);
 
 const isActive: boolean = true;
 console.log(isActive);
 
 function isEven(num: number) {
     return num % 2 === 0;
-}
+};
 
 console.log(isEven(5));
 console.log(isEven(2));
@@ -61,10 +61,10 @@ console.log(std.name);
 console.log(std.courses);
 
 const arr: [boolean, number, ...string[]] = [
-    true, 1, "Bilal", "Ahmed", "Usman", "Yaseen"
+    true, 1, "Dayyan", "Ahmed", "Usman", "Yaseen"
 ];
 
-console.log(arr[3]);
+console.log(arr[2]);
 console.log(arr[0]);
 console.log(arr[5]);
 
@@ -292,8 +292,7 @@ let art = {
 
 artistName(art);
 
-import { Component } from "./App2";
-import { metaVerse } from "./App2";
+import { Component, metaVerse } from "./index";
 
 export const component: Component = {
     name: "Solidity",
@@ -342,17 +341,17 @@ games.name = "GTA 5";
 
 console.log(games);
 
-let freelancer: {
+type freelancer = {
     dev: string,
     salary: number,
 }
 
-let usman = freelancer = {
+let usman: freelancer = {
     dev: "Web 3 Developer",
     salary: 400000,
 }
 
-let bilal = freelancer = {
+let bilal: freelancer = {
     dev: "Full Stack Blockchain Developer",
     salary: 5000000000,
 }
