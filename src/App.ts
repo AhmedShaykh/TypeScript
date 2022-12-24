@@ -294,7 +294,7 @@ artistName(art);
 
 import { Component, metaVerse } from "./index";
 
-export const component: Component = {
+const component: Component = {
     name: "Solidity",
     version: 8,
     frameWork: "Hardhat",
